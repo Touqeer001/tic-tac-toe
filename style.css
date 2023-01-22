@@ -1,0 +1,108 @@
+
+body{
+
+    background: url(tic-tac-toe.jpg)no-repeat;
+    background-size: 1259px 622px;
+}
+#setbody{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* align-content: center; */
+    /* justify-items: center; */
+    /* image-resolution: 100px; */
+}
+
+
+#body {
+    border: 2px solid black;
+    width: 501px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 167px 167px 167px;
+}
+
+.input {
+    background-color: rgba(226, 212, 212, 0.611);
+    border: 2px solid rgb(131, 128, 128);
+    font-size: 100px;
+    text-align: center;
+    width: 164px;
+    height: 163px;
+}
+.won{
+    background-color: rgba(10, 235, 55, 0.611);
+    border: 2px solid rgb(131, 128, 128);
+    font-size: 100px;
+    text-align: center;
+    width: 164px;
+    height: 163px;
+}
+
+#X {
+    width: 143px;
+    height: 168px;
+}
+
+#O {
+    width: 143px;
+    height: 168px;
+}
+#reset{
+    border: 2px solid green;
+    width: 106px;
+    height: 40px;
+    font-size: 17px;
+    background-color: rgba(142, 218, 193, 0.604);
+    font-weight: bold;
+}
+#reset:hover{
+    background-color: rgb(142, 218, 193);
+}
+#reset:active{
+    background-color: rgb(9, 243, 145);
+    /* animation-timing-function: cubic-bezier(); */
+}
+#clr{
+    border: 2px solid green;
+    width: 106px;
+    height: 40px;
+    font-size: 17px;
+    background-color: rgba(142, 218, 193, 0.604);
+    font-weight: bold;
+}
+#clr:hover{
+    background-color: rgb(230, 68, 68);
+}
+#clr:active{
+    border: 2px solid red;
+    background-color: rgb(165, 129, 198);
+}
+#score{
+    border: 2px solid black;
+    width: 259px;
+    height: 103px;
+    position: absolute;
+    top: 125px;
+    right: 32px;
+    background-color: antiquewhite;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* text-align: center; */
+}
+#p1,#p2{
+    border: 1px solid black;
+    width: 123px;
+    height: 20px;
+    background-color: rgb(82, 69, 69);
+    color: rgb(185, 237, 219);
+    /* text-align: center; */
+}
+#p1score,#p2score{
+    border: 1px solid black;
+    /* width: 123px; */
+    height: 30px;
+    /* text-align: center; */
+}
