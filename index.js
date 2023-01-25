@@ -1,11 +1,12 @@
 
 let div = document.getElementById('body');
+console.log(div);
 let yscore = 0;
 let oscore = 0;
 //initially the first turn will be even number    
 let turn = 0;//main condition
 div.addEventListener('click', (e) => {
-    console.log(turn);
+    console.log(e.path);
     // console.log(p2score);
     let O = '<img src="O.png" id="O">';
     let X = '<img src="x.png" id="X">';
@@ -14,10 +15,10 @@ div.addEventListener('click', (e) => {
     turn = turn + 1//main condition
     if (turn % 2 == 0) {
         //e.path[0] is used to select the id of the div on which the mouse is clicked
-        e.path[0].innerHTML = X;
+        e.target.innerHTML = X;
     }
     else {
-        e.path[0].innerHTML = O;
+        e.target.innerHTML = O;
     }
     // console.log(p1score);
 
