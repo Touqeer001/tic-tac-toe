@@ -397,10 +397,12 @@ turn = turn+1;
         });
     }
     else{
-        console.log("Match Tie");
+        // console.log("Match Tie");
     }
     // console.log(e.path)
 });
+
+
 
 //Function to reset the whole page
 function clr() {
