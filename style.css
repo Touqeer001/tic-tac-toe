@@ -1,10 +1,10 @@
+body {
 
-body{
-
-    background: url(tic-tac-toe.jpg)no-repeat;
+    background: url(img/tic-tac-toe.jpg)no-repeat;
     background-size: 1259px 622px;
 }
-#setbody{
+
+#setbody {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,7 +31,8 @@ body{
     width: 164px;
     height: 163px;
 }
-.won{
+
+.won {
     background-color: rgba(10, 235, 55, 0.611);
     border: 2px solid rgb(131, 128, 128);
     font-size: 100px;
@@ -49,7 +50,8 @@ body{
     width: 143px;
     height: 168px;
 }
-#reset{
+
+#reset {
     border: 2px solid green;
     width: 106px;
     height: 40px;
@@ -57,14 +59,17 @@ body{
     background-color: rgba(142, 218, 193, 0.604);
     font-weight: bold;
 }
-#reset:hover{
+
+#reset:hover {
     background-color: rgb(142, 218, 193);
 }
-#reset:active{
+
+#reset:active {
     background-color: rgb(9, 243, 145);
     /* animation-timing-function: cubic-bezier(); */
 }
-#clr{
+
+#clr {
     border: 2px solid green;
     width: 106px;
     height: 40px;
@@ -72,27 +77,28 @@ body{
     background-color: rgba(142, 218, 193, 0.604);
     font-weight: bold;
 }
-#clr:hover{
+
+#clr:hover {
     background-color: rgb(230, 68, 68);
 }
-#clr:active{
+
+#clr:active {
     border: 2px solid red;
     background-color: rgb(165, 129, 198);
 }
-#score{
+
+#score {
     border: 2px solid black;
     width: 259px;
     height: 103px;
     position: absolute;
-    top: 125px;
+    top: 8px;
     right: 32px;
     background-color: antiquewhite;
-    display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* text-align: center; */
 }
-#p1,#p2{
+
+#p1,
+#p2 {
     border: 1px solid black;
     width: 123px;
     height: 20px;
@@ -100,9 +106,84 @@ body{
     color: rgb(185, 237, 219);
     /* text-align: center; */
 }
-#p1score,#p2score{
+
+#p1score,
+#p2score {
     border: 1px solid black;
     /* width: 123px; */
     height: 30px;
     /* text-align: center; */
+}
+
+#turn-div {
+    border: 2px solid black;
+    width: 259px;
+    height: 36px;
+    position: absolute;
+    top: 117px;
+    right: 32px;
+    background-color: #dcd7fa;
+    text-align: center;
+    /* padding: 10px 10px; */
+}
+
+#turn-dec {
+    font-size: 25px;
+    margin-top: 3px;
+}
+
+@media screen and (max-width: 413px) {
+    body {
+
+        background: url(img/tic-tac-toe.jpg)no-repeat;
+        background-size: 996px 845px;
+    }
+
+    #body {
+        width: 408px;
+        height: 408px;
+        margin-top: 148px;
+        grid-template-columns: 136px 136px 119px;
+
+    }
+
+    .input {
+        width: 133px;
+        height: 133px;
+    }
+
+    #score {
+        border: 2px solid black;
+        width: 259px;
+        height: 103px;
+        position: absolute;
+        top: 11px;
+        right: 72px;
+        background-color: antiquewhite;
+        display: flex;
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* text-align: center; */
+    }
+    #turn-div {
+        border: 2px solid black;
+        width: 259px;
+        height: 36px;
+        position: absolute;
+        top: 117px;
+        right: 72px;
+        background-color: #dcd7fa;
+        text-align: center;
+        /* padding: 10px 10px; */
+    }
+
+    #O {
+        width: 114px;
+        height: 124px;
+    }
+
+    #X {
+        width: 104px;
+        height: 126px;
+    }
 }

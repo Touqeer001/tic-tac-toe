@@ -10,7 +10,6 @@
 </head>
 
 <body>
-    <!-- <img src="line.png" alt="" width="20px" height="5000px"> -->
     <div id="setbody">
 
         <div id="body">
@@ -24,7 +23,7 @@
             <div class="input" id="inp8"></div>
             <div class="input" id="inp9"></div>
         </div>
-        <button id="reset" type="reset">Play Again</button>
+        <button id="reset">Play Again</button>
         <button id="clr" onclick="clr()">New Game</button>
     </div>
     <div id="score">
@@ -34,11 +33,11 @@
             </th>
             <tr>
                 <th id="p1">
-                   <img src="O.png" width="30px"
+                   <img src="img/O.png" width="30px"
                    height="30px">
                 </th>
                 <th id="p2">
-                    <img src="x.png" width="30px"
+                    <img src="img/x.png" width="30px"
                     height="30px">
                 </th>
             </tr>
@@ -53,6 +52,11 @@
             <table>
 
             </table>
+    </div>
+
+    <div id="turn-div">
+        <div id="turn-dec"></div> 
+<!-- <div class="turn-border"></div> -->
     </div>
 </body>
 <script src="index.js"></script>
