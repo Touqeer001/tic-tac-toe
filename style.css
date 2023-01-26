@@ -186,4 +186,12 @@ body {
         width: 104px;
         height: 126px;
     }
+    .won {
+        background-color: rgba(10, 235, 55, 0.611);
+        border: 2px solid rgb(131, 128, 128);
+        font-size: 91px;
+        text-align: center;
+        width: 133px;
+        height: 133px;
+    }
 }
