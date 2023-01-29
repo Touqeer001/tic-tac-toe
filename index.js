@@ -393,15 +393,8 @@ reset.addEventListener('click', e => {
     // if()
     let win = document.getElementsByClassName('won');
     if (win.length > 0) {
-        // win[0].className = 'input' ;
-        // win[1].className = 'input' ;
-        // console.log(win[0]);
-        // console.log(win[1]);
-        // console.log(win[2]);
-        // win[2].className = 'input' ;
         document.getElementsByClassName('won')[0].className = 'input';
         document.getElementsByClassName('won')[1].className = 'input';
-        // document.getElementsByClassName('won')[2].className = 'input';
     }
     if (document.getElementsByClassName('won').length > 0) {
         document.getElementsByClassName('won')[0].className = 'input';
@@ -414,12 +407,3 @@ reset.addEventListener('click', e => {
 function clr() {
     location.reload();
 }
-
-
-
-
-
-
-
-
-
