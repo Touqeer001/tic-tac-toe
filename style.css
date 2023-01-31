@@ -9,9 +9,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* align-content: center; */
-    /* justify-items: center; */
-    /* image-resolution: 100px; */
 }
 
 
@@ -60,14 +57,10 @@ body {
     font-weight: bold;
 }
 
-#reset:hover {
+#reset:active {
     background-color: rgb(142, 218, 193);
 }
 
-#reset:active {
-    background-color: rgb(9, 243, 145);
-    /* animation-timing-function: cubic-bezier(); */
-}
 
 #clr {
     border: 2px solid green;
@@ -78,14 +71,10 @@ body {
     font-weight: bold;
 }
 
-#clr:hover {
+#clr:active {
     background-color: rgb(230, 68, 68);
 }
 
-#clr:active {
-    border: 2px solid red;
-    background-color: rgb(165, 129, 198);
-}
 
 #score {
     border: 2px solid black;
@@ -132,22 +121,160 @@ body {
     margin-top: 3px;
 }
 
+#won-div {
+    border: 2px solid black;
+    width: 259px;
+    height: 36px;
+    position: absolute;
+    top: 156px;
+    right: 32px;
+    background-color: #746f90;
+    text-align: center;
+    /* padding: 10px 10px; */
+}
+
+#won-dec {
+    font-size: 25px;
+    margin-top: 3px;
+}
+
+
+@media screen and (max-width:821px) {
+    body {
+        background-size: 1329px 1181px;
+    }
+
+    #body {
+        margin-top: 228px;
+        width: 810px;
+        height: 810px;
+        grid-template-columns: 270px 269px 167px;
+    }
+
+    .input {
+        width: 264px;
+        height: 264px;
+    }
+    .won{
+            width: 264px;
+            height: 264px;
+    }
+
+    #reset {
+        width: 169px;
+        height: 54px;
+        font-size: 28px;
+    }
+
+    #clr {
+        width: 169px;
+        height: 54px;
+        font-size: 28px;
+
+    }
+    #score {
+        right: 1px;
+    }
+
+    #turn-div {
+        right: 1px;
+    }
+
+    #won-div {
+        right: 1px;
+        top: 191px;
+        width: 272px;
+    height: 42px;
+    }
+    #O {
+        width: 219px;
+        height: 219px;
+    }
+    #X {
+        width: 219px;
+        height: 219px;
+    }
+}
+
+@media screen and (max-width:415px) {
+    body {
+        background-size: 1283px 898px;
+    }
+
+    #body {
+        margin-top: 216px;
+        width: 411px;
+        height: 411px;
+        grid-template-columns: 135px 136px 142px;
+    }
+
+    #score {
+        top: 20px;
+        right: 65px;
+    }
+
+    #turn-div {
+        top: 128px;
+        right: 65px;
+    }
+
+    #won-div {
+        top: 184px;
+        right: 65px;
+    }
+
+    .input {
+        width: 134px;
+        height: 134px;
+    }
+    .won {
+        width: 134px;
+        height: 134px;
+    }
+    #O {
+        width: 121px;
+        height: 130px;
+    }
+    #X {
+        width: 121px;
+        height: 130px;
+    }
+    #reset{
+    width: 137px;
+    height: 48px;
+    font-size: 23px;
+    }
+    #clr{
+        width: 137px;
+        height: 48px;
+        font-size: 23px;
+        }
+        #won-div {
+            width: 260px;
+            height: 38px;
+        }
+}
+
 @media screen and (max-width: 413px) {
     body {
 
         background: url(img/tic-tac-toe.jpg)no-repeat;
-        background-size: 996px 845px;
+        background-size: 1039px 916px;
     }
 
     #body {
         width: 408px;
         height: 408px;
-        margin-top: 148px;
+        margin-top: 192px;
         grid-template-columns: 136px 136px 119px;
 
     }
 
     .input {
+        width: 133px;
+        height: 133px;
+    }
+    .won {
         width: 133px;
         height: 133px;
     }
@@ -165,12 +292,25 @@ body {
         /* align-items: center; */
         /* text-align: center; */
     }
+
     #turn-div {
         border: 2px solid black;
         width: 259px;
         height: 36px;
         position: absolute;
         top: 117px;
+        right: 72px;
+        background-color: #dcd7fa;
+        text-align: center;
+        /* padding: 10px 10px; */
+    }
+
+    #won-div {
+        border: 2px solid black;
+        width: 259px;
+        height: 36px;
+        position: absolute;
+        top: 160px;
         right: 72px;
         background-color: #dcd7fa;
         text-align: center;
@@ -186,12 +326,83 @@ body {
         width: 104px;
         height: 126px;
     }
-    .won {
+
+    /* .won {
         background-color: rgba(10, 235, 55, 0.611);
         border: 2px solid rgb(131, 128, 128);
         font-size: 91px;
         text-align: center;
         width: 133px;
         height: 133px;
+    } */
+}
+
+@media screen and (max-width:391px) {
+    #body {
+        width: 388px;
+        height: 388px;
+        grid-template-columns: 129px 129px 119px;
+    }
+
+    .input {
+        width: 126px;
+        height: 126px;
+    }
+    .won {
+        width: 126px;
+        height: 126px;
+    }
+
+    #score {
+        right: 60px;
+    }
+
+    #turn-div {
+        right: 60px;
+    }
+
+    #won-div {
+        right: 60px;
+    }
+}
+
+@media screen and (max-width:376px) {
+    #body {
+        width: 374px;
+        height: 374px;
+        grid-template-columns: 125px 125px 119px;
+    }
+
+    .input {
+        width: 121px;
+        height: 121px;
+    }
+
+    .won {
+        width: 121px;
+        height: 121px;
+    }
+
+    #score {
+        right: 51px;
+    }
+
+    #turn-div {
+        right: 51px;
+    }
+
+    #won-div {
+        right: 51px;
+    }
+    #reset{
+        width: 126px;
+    height: 41px;
+    font-size: 20px;
+    }
+
+    #clr{
+        width: 126px;
+    height: 41px;
+    font-size: 20px;
     }
 }

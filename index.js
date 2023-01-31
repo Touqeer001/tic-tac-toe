@@ -7,6 +7,8 @@ let oscore = 0;
 let turn = 0;//main condition
 document.getElementById('turn-dec').innerHTML = 'O turn'
 div.addEventListener('click', (e) => {
+console.log(turn);
+
     // console.log(e.path);
     // console.log(p2score);
     let O = '<img src="img/O.png" id="O">';
@@ -45,7 +47,7 @@ div.addEventListener('click', (e) => {
         p2score.innerHTML = yscore;
         //Below code will add the turn by one means if the X user wins the next turn will be of the X and not O
         turn = turn + 1;
-        document.getElementById('turn-dec').innerHTML = `<img src="img/x.png" width="30px"
+        document.getElementById('won-dec').innerHTML = `<img src="img/x.png" width="30px"
         height="30px"> WON`;
 
     }
@@ -61,7 +63,7 @@ div.addEventListener('click', (e) => {
         //CODE FOR SCORE ADDITION
         yscore = yscore + 1;
         p2score.innerHTML = yscore;
-        document.getElementById('turn-dec').innerHTML = `<img src="img/x.png" width="30px"
+        document.getElementById('won-dec').innerHTML = `<img src="img/x.png" width="30px"
         height="30px"> WON`;
     }
 
@@ -75,7 +77,7 @@ div.addEventListener('click', (e) => {
 
         yscore = yscore + 1;
         p2score.innerHTML = yscore;
-        document.getElementById('turn-dec').innerHTML = `<img src="img/x.png" width="30px"
+        document.getElementById('won-dec').innerHTML = `<img src="img/x.png" width="30px"
         height="30px"> WON`;
     }
 
@@ -88,7 +90,7 @@ div.addEventListener('click', (e) => {
         turn = turn + 1;
         yscore = yscore + 1;
         p2score.innerHTML = yscore;
-        document.getElementById('turn-dec').innerHTML = `<img src="img/x.png" width="30px"
+        document.getElementById('won-dec').innerHTML = `<img src="img/x.png" width="30px"
         height="30px"> WON`;
     }
 
@@ -101,7 +103,7 @@ div.addEventListener('click', (e) => {
         turn = turn + 1;
         yscore = yscore + 1;
         p2score.innerHTML = yscore;
-        document.getElementById('turn-dec').innerHTML = `<img src="img/x.png" width="30px"
+        document.getElementById('won-dec').innerHTML = `<img src="img/x.png" width="30px"
         height="30px"> WON`;
     }
 
@@ -116,7 +118,7 @@ div.addEventListener('click', (e) => {
 
         yscore = yscore + 1;
         p2score.innerHTML = yscore;
-        document.getElementById('turn-dec').innerHTML = `<img src="img/x.png" width="30px"
+        document.getElementById('won-dec').innerHTML = `<img src="img/x.png" width="30px"
         height="30px"> WON`;
     }
 
@@ -130,7 +132,7 @@ div.addEventListener('click', (e) => {
 
         yscore = yscore + 1;
         p2score.innerHTML = yscore;
-        document.getElementById('turn-dec').innerHTML = `<img src="img/x.png" width="30px"
+        document.getElementById('won-dec').innerHTML = `<img src="img/x.png" width="30px"
         height="30px"> WON`;
     }
 
@@ -144,7 +146,7 @@ div.addEventListener('click', (e) => {
 
         yscore = yscore + 1;
         p2score.innerHTML = yscore;
-        document.getElementById('turn-dec').innerHTML = `<img src="img/x.png" width="30px"
+        document.getElementById('won-dec').innerHTML = `<img src="img/x.png" width="30px"
         height="30px"> WON`;
     }
     //Condition for O
@@ -159,7 +161,7 @@ div.addEventListener('click', (e) => {
         //CONDITION FOR SCORE
         oscore = oscore + 1;
         p1score.innerHTML = oscore;
-        document.getElementById('turn-dec').innerHTML = `<img src="img/O.png" width="30px"
+        document.getElementById('won-dec').innerHTML = `<img src="img/O.png" width="30px"
         height="30px"> WON`;
     }
 
@@ -174,7 +176,7 @@ div.addEventListener('click', (e) => {
         //CONDITION FOR SCORE
         oscore = oscore + 1;
         p1score.innerHTML = oscore;
-        document.getElementById('turn-dec').innerHTML = `<img src="img/O.png" width="30px"
+        document.getElementById('won-dec').innerHTML = `<img src="img/O.png" width="30px"
         height="30px"> WON`;
     }
 
@@ -189,7 +191,7 @@ div.addEventListener('click', (e) => {
         //CONDITION FOR SCORE
         oscore = oscore + 1;
         p1score.innerHTML = oscore;
-        document.getElementById('turn-dec').innerHTML = `<img src="img/O.png" width="30px"
+        document.getElementById('won-dec').innerHTML = `<img src="img/O.png" width="30px"
         height="30px"> WON`;
 
     }
@@ -205,7 +207,7 @@ div.addEventListener('click', (e) => {
         //CONDITION FOR SCORE
         oscore = oscore + 1;
         p1score.innerHTML = oscore;
-        document.getElementById('turn-dec').innerHTML = `<img src="img/O.png" width="30px"
+        document.getElementById('won-dec').innerHTML = `<img src="img/O.png" width="30px"
         height="30px"> WON`;
     }
 
@@ -219,7 +221,7 @@ div.addEventListener('click', (e) => {
         //CONDITION FOR SCORE
         oscore = oscore + 1;
         p1score.innerHTML = oscore;
-        document.getElementById('turn-dec').innerHTML = `<img src="img/O.png" width="30px"
+        document.getElementById('won-dec').innerHTML = `<img src="img/O.png" width="30px"
         height="30px"> WON`;
     }
 
@@ -235,7 +237,7 @@ div.addEventListener('click', (e) => {
         //CONDITION FOR SCORE
         oscore = oscore + 1;
         p1score.innerHTML = oscore;
-        document.getElementById('turn-dec').innerHTML = `<img src="img/O.png" width="30px"
+        document.getElementById('won-dec').innerHTML = `<img src="img/O.png" width="30px"
         height="30px"> WON`;
 
     }
@@ -251,7 +253,7 @@ div.addEventListener('click', (e) => {
         //CONDITION FOR SCORE
         oscore = oscore + 1;
         p1score.innerHTML = oscore;
-        document.getElementById('turn-dec').innerHTML = `<img src="img/O.png" width="30px"
+        document.getElementById('won-dec').innerHTML = `<img src="img/O.png" width="30px"
         height="30px"> WON`;
     }
 
@@ -266,7 +268,7 @@ div.addEventListener('click', (e) => {
         //CONDITION FOR SCORE
         oscore = oscore + 1;
         p1score.innerHTML = oscore;
-        document.getElementById('turn-dec').innerHTML = `<img src="img/O.png" width="30px"
+        document.getElementById('won-dec').innerHTML = `<img src="img/O.png" width="30px"
         height="30px"> WON`;
 
     }
@@ -361,6 +363,21 @@ div.addEventListener('click', (e) => {
             && input[3].innerHTML == X && input[4].innerHTML == O && input[5].innerHTML == O
             && input[6].innerHTML == O && input[7].innerHTML == X && input[8].innerHTML == X
         )
+
+        ||
+
+        (input[0].innerHTML == O && input[1].innerHTML == X && input[2].innerHTML == O
+            && input[3].innerHTML == X && input[4].innerHTML == X && input[5].innerHTML == O
+            && input[6].innerHTML == X && input[7].innerHTML == O && input[8].innerHTML == X
+        )
+        
+        ||
+
+        (input[0].innerHTML == X && input[1].innerHTML == O && input[2].innerHTML == X
+            && input[3].innerHTML == O && input[4].innerHTML == O && input[5].innerHTML == X
+            && input[6].innerHTML == O && input[7].innerHTML == X && input[8].innerHTML == O
+        )
+        
     ) {
         oscore = oscore + 1;
         yscore = yscore + 1;
@@ -400,6 +417,8 @@ reset.addEventListener('click', e => {
         document.getElementsByClassName('won')[0].className = 'input';
     }
 
+    turn = 0;
+
 })
 
 
@@ -407,3 +426,5 @@ reset.addEventListener('click', e => {
 function clr() {
     location.reload();
 }
+
+console.log(turn);
