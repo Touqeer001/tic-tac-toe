@@ -7,7 +7,7 @@ let oscore = 0;
 let turn = 0;//main condition
 document.getElementById('turn-dec').innerHTML = 'O turn'
 div.addEventListener('click', (e) => {
-console.log(turn);
+    console.log(turn);
 
     // console.log(e.path);
     // console.log(p2score);
@@ -47,8 +47,12 @@ console.log(turn);
         p2score.innerHTML = yscore;
         //Below code will add the turn by one means if the X user wins the next turn will be of the X and not O
         turn = turn + 1;
-        document.getElementById('won-dec').innerHTML = `<img src="img/x.png" width="30px"
-        height="30px"> WON`;
+         document.getElementById('div').innerHTML = `<div id="won-div">
+        <div id="won-dec">
+            <img src="img/X.png" width="30px"
+        height="30px"> WON
+        </div> 
+    </div>`;
 
     }
 
@@ -63,8 +67,12 @@ console.log(turn);
         //CODE FOR SCORE ADDITION
         yscore = yscore + 1;
         p2score.innerHTML = yscore;
-        document.getElementById('won-dec').innerHTML = `<img src="img/x.png" width="30px"
-        height="30px"> WON`;
+         document.getElementById('div').innerHTML = `<div id="won-div">
+        <div id="won-dec">
+            <img src="img/X.png" width="30px"
+        height="30px"> WON
+        </div> 
+    </div>`;
     }
 
     else if (input[6].innerHTML == X && input[7].innerHTML == X && input[8].innerHTML == X) {
@@ -77,8 +85,12 @@ console.log(turn);
 
         yscore = yscore + 1;
         p2score.innerHTML = yscore;
-        document.getElementById('won-dec').innerHTML = `<img src="img/x.png" width="30px"
-        height="30px"> WON`;
+         document.getElementById('div').innerHTML = `<div id="won-div">
+        <div id="won-dec">
+            <img src="img/X.png" width="30px"
+        height="30px"> WON
+        </div> 
+    </div>`;
     }
 
     else if (input[0].innerHTML == X && input[3].innerHTML == X && input[6].innerHTML == X) {
@@ -90,8 +102,12 @@ console.log(turn);
         turn = turn + 1;
         yscore = yscore + 1;
         p2score.innerHTML = yscore;
-        document.getElementById('won-dec').innerHTML = `<img src="img/x.png" width="30px"
-        height="30px"> WON`;
+         document.getElementById('div').innerHTML = `<div id="won-div">
+        <div id="won-dec">
+            <img src="img/X.png" width="30px"
+        height="30px"> WON
+        </div> 
+    </div>`;
     }
 
     else if (input[1].innerHTML == X && input[4].innerHTML == X && input[7].innerHTML == X) {
@@ -103,8 +119,12 @@ console.log(turn);
         turn = turn + 1;
         yscore = yscore + 1;
         p2score.innerHTML = yscore;
-        document.getElementById('won-dec').innerHTML = `<img src="img/x.png" width="30px"
-        height="30px"> WON`;
+         document.getElementById('div').innerHTML = `<div id="won-div">
+        <div id="won-dec">
+            <img src="img/X.png" width="30px"
+        height="30px"> WON
+        </div> 
+    </div>`;
     }
 
 
@@ -118,8 +138,12 @@ console.log(turn);
 
         yscore = yscore + 1;
         p2score.innerHTML = yscore;
-        document.getElementById('won-dec').innerHTML = `<img src="img/x.png" width="30px"
-        height="30px"> WON`;
+         document.getElementById('div').innerHTML = `<div id="won-div">
+        <div id="won-dec">
+            <img src="img/X.png" width="30px"
+        height="30px"> WON
+        </div> 
+    </div>`;
     }
 
     else if (input[0].innerHTML == X && input[4].innerHTML == X && input[8].innerHTML == X) {
@@ -132,8 +156,12 @@ console.log(turn);
 
         yscore = yscore + 1;
         p2score.innerHTML = yscore;
-        document.getElementById('won-dec').innerHTML = `<img src="img/x.png" width="30px"
-        height="30px"> WON`;
+         document.getElementById('div').innerHTML = `<div id="won-div">
+        <div id="won-dec">
+            <img src="img/X.png" width="30px"
+        height="30px"> WON
+        </div> 
+    </div>`;
     }
 
     else if (input[2].innerHTML == X && input[4].innerHTML == X && input[6].innerHTML == X) {
@@ -146,8 +174,12 @@ console.log(turn);
 
         yscore = yscore + 1;
         p2score.innerHTML = yscore;
-        document.getElementById('won-dec').innerHTML = `<img src="img/x.png" width="30px"
-        height="30px"> WON`;
+         document.getElementById('div').innerHTML = `<div id="won-div">
+        <div id="won-dec">
+            <img src="img/X.png" width="30px"
+        height="30px"> WON
+        </div> 
+    </div>`;
     }
     //Condition for O
     else if (input[0].innerHTML == O && input[1].innerHTML == O && input[2].innerHTML == O) {
@@ -161,8 +193,12 @@ console.log(turn);
         //CONDITION FOR SCORE
         oscore = oscore + 1;
         p1score.innerHTML = oscore;
-        document.getElementById('won-dec').innerHTML = `<img src="img/O.png" width="30px"
-        height="30px"> WON`;
+         document.getElementById('div').innerHTML = `<div id="won-div">
+        <div id="won-dec">
+            <img src="img/O.png" width="30px"
+        height="30px"> WON
+        </div> 
+    </div>`;
     }
 
     else if (input[3].innerHTML == O && input[4].innerHTML == O && input[5].innerHTML == O) {
@@ -176,8 +212,12 @@ console.log(turn);
         //CONDITION FOR SCORE
         oscore = oscore + 1;
         p1score.innerHTML = oscore;
-        document.getElementById('won-dec').innerHTML = `<img src="img/O.png" width="30px"
-        height="30px"> WON`;
+         document.getElementById('div').innerHTML = `<div id="won-div">
+        <div id="won-dec">
+            <img src="img/O.png" width="30px"
+        height="30px"> WON
+        </div> 
+    </div>`;
     }
 
     else if (input[6].innerHTML == O && input[7].innerHTML == O && input[8].innerHTML == O) {
@@ -191,8 +231,12 @@ console.log(turn);
         //CONDITION FOR SCORE
         oscore = oscore + 1;
         p1score.innerHTML = oscore;
-        document.getElementById('won-dec').innerHTML = `<img src="img/O.png" width="30px"
-        height="30px"> WON`;
+        document.getElementById('div').innerHTML = `<div id="won-div">
+        <div id="won-dec">
+            <img src="img/O.png" width="30px"
+        height="30px"> WON
+        </div> 
+    </div>`;
 
     }
 
@@ -207,8 +251,12 @@ console.log(turn);
         //CONDITION FOR SCORE
         oscore = oscore + 1;
         p1score.innerHTML = oscore;
-        document.getElementById('won-dec').innerHTML = `<img src="img/O.png" width="30px"
-        height="30px"> WON`;
+         document.getElementById('div').innerHTML = `<div id="won-div">
+        <div id="won-dec">
+            <img src="img/O.png" width="30px"
+        height="30px"> WON
+        </div> 
+    </div>`;
     }
 
     else if (input[1].innerHTML == O && input[4].innerHTML == O && input[7].innerHTML == O) {
@@ -221,8 +269,12 @@ console.log(turn);
         //CONDITION FOR SCORE
         oscore = oscore + 1;
         p1score.innerHTML = oscore;
-        document.getElementById('won-dec').innerHTML = `<img src="img/O.png" width="30px"
-        height="30px"> WON`;
+         document.getElementById('div').innerHTML = `<div id="won-div">
+        <div id="won-dec">
+            <img src="img/O.png" width="30px"
+        height="30px"> WON
+        </div> 
+    </div>`;
     }
 
 
@@ -237,8 +289,12 @@ console.log(turn);
         //CONDITION FOR SCORE
         oscore = oscore + 1;
         p1score.innerHTML = oscore;
-        document.getElementById('won-dec').innerHTML = `<img src="img/O.png" width="30px"
-        height="30px"> WON`;
+         document.getElementById('div').innerHTML = `<div id="won-div">
+        <div id="won-dec">
+            <img src="img/O.png" width="30px"
+        height="30px"> WON
+        </div> 
+    </div>`;
 
     }
 
@@ -253,8 +309,12 @@ console.log(turn);
         //CONDITION FOR SCORE
         oscore = oscore + 1;
         p1score.innerHTML = oscore;
-        document.getElementById('won-dec').innerHTML = `<img src="img/O.png" width="30px"
-        height="30px"> WON`;
+         document.getElementById('div').innerHTML = `<div id="won-div">
+        <div id="won-dec">
+            <img src="img/O.png" width="30px"
+        height="30px"> WON
+        </div> 
+    </div>`;
     }
 
     else if (input[2].innerHTML == O && input[4].innerHTML == O && input[6].innerHTML == O) {
@@ -268,8 +328,12 @@ console.log(turn);
         //CONDITION FOR SCORE
         oscore = oscore + 1;
         p1score.innerHTML = oscore;
-        document.getElementById('won-dec').innerHTML = `<img src="img/O.png" width="30px"
-        height="30px"> WON`;
+         document.getElementById('div').innerHTML = `<div id="won-div">
+        <div id="won-dec">
+            <img src="img/O.png" width="30px"
+        height="30px"> WON
+        </div> 
+    </div>`;
 
     }
 
@@ -370,14 +434,14 @@ console.log(turn);
             && input[3].innerHTML == X && input[4].innerHTML == X && input[5].innerHTML == O
             && input[6].innerHTML == X && input[7].innerHTML == O && input[8].innerHTML == X
         )
-        
+
         ||
 
         (input[0].innerHTML == X && input[1].innerHTML == O && input[2].innerHTML == X
             && input[3].innerHTML == O && input[4].innerHTML == O && input[5].innerHTML == X
             && input[6].innerHTML == O && input[7].innerHTML == X && input[8].innerHTML == O
         )
-        
+
     ) {
         oscore = oscore + 1;
         yscore = yscore + 1;
@@ -398,6 +462,7 @@ reset.addEventListener('click', e => {
     //     inpvalues[i].innerHTML = '';
     //     won[i].innerHTML = '';
     // }
+    document.getElementById('div').innerHTML = '';
     document.getElementById('inp1').innerHTML = '';
     document.getElementById('inp2').innerHTML = '';
     document.getElementById('inp3').innerHTML = '';
